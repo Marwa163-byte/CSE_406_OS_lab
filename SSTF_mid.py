@@ -6,7 +6,6 @@ head = int(input("Enter head value : "))
 
 total_mov = 0
 Sequence=[]
-
 while requests:
   requests.sort(key=lambda X: abs(X-head))
   closest = requests.pop(0)
