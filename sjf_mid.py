@@ -5,7 +5,6 @@ for i in range(n):
   at=int(input(f"Enter arrival time for {pid}:"))
   bt=int(input(f"Enter burst time for {pid}:"))
   processes.append({'PID':pid,'AT':at,'BT':bt})
-
 time = 0
 completed=[]
 while len(completed) < n:
@@ -19,8 +18,6 @@ while len(completed) < n:
     current['TAT'] = current['CT'] - current['AT']
     current['WT'] = current['TAT'] - current['BT']
     completed.append(current)
-
-
 print("\nPID\tAT\tBT\tCT\tTAT\tWT")
 total_WT = total_tat = 0
 for p in processes:
